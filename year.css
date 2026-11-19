@@ -1,0 +1,300 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #187d83;
+    --dark: #244b55;
+    --gold: #b49a6a;
+    --cream: #f7f5ef;
+    --light: #eaf4f2;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background: #f8faf9;
+    color: var(--dark);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* HEADER */
+
+.top-header {
+    background: white;
+    padding: 15px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 15px rgba(0,0,0,.04);
+}
+
+.back {
+    font-size: 13px;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo h1 {
+    color: var(--primary);
+    font-size: 28px;
+    font-weight: 900;
+}
+
+.logo span {
+    color: var(--gold);
+    font-size: 10px;
+    letter-spacing: 4px;
+}
+
+/* HERO */
+
+.year-hero {
+    background: linear-gradient(125deg, #174e5b, #18868a);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-label {
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #d8c49b;
+    font-weight: bold;
+}
+
+.year-icon {
+    width: 75px;
+    height: 75px;
+    border: 1px solid rgba(255,255,255,.3);
+    background: rgba(255,255,255,.1);
+    border-radius: 23px;
+    display: grid;
+    place-items: center;
+    margin: 20px auto;
+    font-size: 38px;
+    color: #e5d3aa;
+}
+
+.year-hero h1 {
+    font-size: 32px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.year-hero p {
+    font-size: 14px;
+    color: #e0eeee;
+}
+
+.year-info {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 22px;
+}
+
+.year-info span {
+    background: rgba(255,255,255,.12);
+    border: 1px solid rgba(255,255,255,.15);
+    padding: 7px 18px;
+    border-radius: 30px;
+    font-size: 11px;
+}
+
+/* CONTENT */
+
+.container {
+    width: 86%;
+    max-width: 1100px;
+    margin: 45px auto;
+}
+
+.intro {
+    margin-bottom: 25px;
+}
+
+.intro span {
+    color: var(--gold);
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+
+.intro h2 {
+    font-size: 25px;
+    margin: 5px 0;
+    font-weight: 900;
+}
+
+.intro p {
+    font-size: 13px;
+    color: #98a5a5;
+}
+
+/* CARDS */
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.content-card {
+    background: white;
+    border: 1px solid #e9eeee;
+    border-radius: 22px;
+    padding: 25px;
+    transition: .3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.content-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 30px rgba(24,125,131,.09);
+    border-color: #b9d9d5;
+}
+
+.icon-box {
+    width: 55px;
+    height: 55px;
+    background: var(--light);
+    color: var(--primary);
+    border-radius: 17px;
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.content-card h3 {
+    font-size: 17px;
+    margin-bottom: 9px;
+}
+
+.content-card p {
+    font-size: 12px;
+    color: #91a1a1;
+    line-height: 2;
+    min-height: 48px;
+}
+
+.content-card span {
+    display: inline-block;
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+/* NOTICE */
+
+.notice {
+    margin-top: 35px;
+    background: linear-gradient(110deg, #f2f0e7, #eaf4f2);
+    padding: 23px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.notice-icon {
+    width: 50px;
+    height: 50px;
+    background: white;
+    color: var(--gold);
+    border-radius: 15px;
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    flex-shrink: 0;
+}
+
+.notice h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.notice p {
+    font-size: 12px;
+    color: #7f9292;
+    line-height: 2;
+}
+
+/* FOOTER */
+
+footer {
+    background: #174e5b;
+    text-align: center;
+    color: white;
+    padding: 30px 15px;
+}
+
+footer h2 {
+    color: #d6c29a;
+    letter-spacing: 5px;
+    font-size: 23px;
+}
+
+footer p {
+    font-size: 12px;
+    margin: 8px 0;
+}
+
+footer small {
+    font-size: 10px;
+    color: #a7c0be;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .container {
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    .year-hero {
+        padding: 40px 15px;
+    }
+
+    .year-hero h1 {
+        font-size: 27px;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .content-card {
+        padding: 22px;
+    }
+
+    .content-card p {
+        min-height: auto;
+    }
+
+    .top-header {
+        padding: 12px 5%;
+    }
+
+    .notice {
+        padding: 18px;
+    }
+}
